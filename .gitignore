@@ -1,3 +1,40 @@
+# Generated configuration files by autoreconf (will be part of release tarballs)
+lib-src/libsndfile/INSTALL
+lib-src/sbsms/INSTALL
+locale/Makevars.template
+Makefile.in
+ar-lib
+compile
+confdefs.h
+configtemplate.h
+config.guess
+config.sub
+configure
+depcomp
+install-sh
+ltmain.sh
+missing
+mkinstalldirs
+test-driver
+*config.h.in
+*.tmp
+
+# M4 macros provided by autotools
+libtool.m4
+ltoptions.m4
+ltsugar.m4
+ltversion.m4
+lt~obsolete.m4
+
+# Handcrafted configuration files
+!lib-src/libvamp/Makefile.in
+!lib-src/libsoxr/configure
+!lib-src/libsoxr/soxr-config.h.in
+!lib-src/lv2/configure
+!lib-src/portaudio-v19/bindings/cpp/build/gnu/Makefile.in
+!lib-src/portaudio-v19/Makefile.in
+!lib-src/expat/Makefile.in
+
 # Autotools generated files
 locale/Makefile.in
 Makefile
@@ -22,6 +59,7 @@ stamp-po
 # Generated files by build system
 lib-src/expat/expat_config.h
 lib-src/libflac/doc/Doxyfile
+lib-src/libflac/doc/FLAC.tag
 lib-src/libflac/config.h
 lib-src/libflac/test/common.sh
 lib-src/libid3tag/config.h
