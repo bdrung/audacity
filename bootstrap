@@ -1,0 +1,19 @@
+#!/bin/sh
+set -eu
+
+# bootstrap file for Audacity
+#
+# Copyright 2016 Audacity Team
+# License: GPL v2
+# Author: Benjamin Drung <benjamin@audacityteam.org>
+
+cd "${0%/*}"
+autoreconf --install --force
+
+# Copy install-sh script for configure, despite not using automake
+cd lib-src/expat
+automake --add-missing 2>/dev/null || true
+cd ../../lib-src/portaudio-v19
+automake --add-missing 2>/dev/null || true
+
+echo "Successfully bootstrapped"
